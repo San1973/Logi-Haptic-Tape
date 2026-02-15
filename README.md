@@ -2,26 +2,22 @@
 
 ![Logi Haptic-Tape Dashboard](https://path-to-your-screenshot.png)
 
-> **"Feel the Market. Rule the Tape."**
-> Logi Haptic-Tape is a high-performance integration for the Logitech MX Creative Ecosystem. It bridges the gap between digital charts and physical execution using the **Logitech Actions SDK**.
+> **"Feel the Breakout. Rule the Tape."**
+> A professional-grade, full-stack integration for the Logitech MX Creative Ecosystem, transforming market data into physical intuition.
 
----
-
-## 🚀 Overview
-**Logi Haptic-Tape** transforms the trading experience from "Visual Only" to "Multisensory." By offloading market sentiment to the **MX Creative Console** and price action to the **MX Master 4 Haptics**, traders can maintain 100% focus on the price action while sensing the market's "mood" through their peripherals.
+## 🚀 The Tech Stack
+* **Logic:** C# / .NET 8 (Logitech Actions SDK)
+* **Data Ingestion:** TypeScript (Browser Shim) via TradingView WebSocket API
+* **Communication:** Socket.io (Localhost WebSocket Bridge)
+* **Infrastructure:** Node.js, Logi Options+ Platform, SQLite (Local Profiling)
+* **Telemetry:** Alternative.me Fear & Greed API & Binance API
 
 ## ✨ Key Features
-* **Haptic Tape Reading:** Feel support/resistance levels and volatility via the MX Master 4 HD haptic engine.
-* **Sentiment-Sync HUD:** The MX Creative Console LCD keys act as a live heatmap, glowing red/green based on real-time Bull/Bear sentiment.
-* **Contextual Actions Ring:** A dynamic, state-aware overlay for sub-millisecond execution.
-* **Precision Timeline Scrubbing:** Use the Analog Dial to navigate historical data with adaptive haptic inertia.
+* **Haptic Tape Reading:** Real-time volatility mapped to the MX Master 4 HD haptic engine.
+* **Sentiment-Sync HUD:** 3x3 LCD heatmap on the MX Creative Console powered by the **Logi LCD SDK**.
+* **Flick-to-Trade:** Sub-millisecond execution via the **Logi Overlay API**.
 
-## 🛠️ Hardware Requirements
-* **Logitech MX Master 4** (Haptic feedback)
-* **Logitech MX Creative Console** (Sentiment heatmap & Telemetry)
-* **Logi Options+ App** (v2026.1+)
-
-## 📥 Installation
-1. Download the `.lplugin` from our [Releases](link).
-2. Install via **Logi Options+ Marketplace**.
-3. Sync the **TradingView Extension** to enable the WebSocket bridge.
+## 🛠️ Setup
+1.  **Plugin:** Install `LogiHapticTape.lplugin` via Logi Options+.
+2.  **Bridge:** Run the local Node.js bridge (`npm start`).
+3.  **Extension:** Load the "Logi-Tape" extension in Chrome/Edge.
