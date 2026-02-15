@@ -14,8 +14,6 @@ Our solution offloads critical data to the **somatosensory system** (touch) and 
 * **Touch:** Feel the "weight" of the market. Through the MX Master 4’s HD Haptics, volatility isn't just a line on a chart—it's a physical vibration in your palm.
 * **Sense:** The MX Creative Console acts as a "Market Mood" barometer. By glowing in sync with live sentiment, it allows you to sense if the market is "Fearful" or "Greedy" without looking away from the candles.
 
-By bridging the sensory gap, Logi Haptic-Tape allows for faster reaction times and higher emotional composure during volatile breakouts.
-
 ---
 
 ## 🚀 The Tech Stack
@@ -23,13 +21,21 @@ By bridging the sensory gap, Logi Haptic-Tape allows for faster reaction times a
 * **Data Ingestion:** TypeScript (Browser Shim) via TradingView WebSocket API
 * **Communication:** Socket.io (Localhost WebSocket Bridge)
 * **Infrastructure:** Node.js, Logi Options+ Platform, SQLite (Local Profiling)
-* **Telemetry:** Alternative.me Fear & Greed API & Binance API
 
 ## ✨ Key Features
-* **Haptic Tape Reading:** Real-time volatility mapped to the MX Master 4 HD haptic engine.
-* **Sentiment-Sync HUD:** 3x3 LCD heatmap on the MX Creative Console powered by the **Logi LCD SDK**.
-* **Flick-to-Trade:** Sub-millisecond execution via the **Logi Overlay API**.
-* **Precision Scrubbing:** Navigating historical charts using the Analog Dial with haptic detents.
+
+### 🎛️ MX Creative Console Integration
+* **Sentiment Heatmap:** The 3x3 LCD keypad displays a real-time color gradient (Red to Green) based on the **Fear & Greed Index** and volume delta.
+* **Live Telemetry:** Contextual keys display live RSI, MACD, and P&L data directly on the hardware.
+* **Analog Timeline Scrubbing:** The Dial allows for millisecond-precision chart navigation with **Adaptive Haptic Detents** that resist movement as you approach live price action.
+
+### 🖱️ MX Master 4 Haptics
+* **Tape Reading:** Real-time price volatility $(\sigma)$ mapped to variable haptic frequencies.
+* **Support/Resistance "Snapping":** Feel a tactile "click" when your cursor crosses major price levels.
+
+### ⭕ Actions Ring HUD
+* **Flick-to-Trade:** Sub-millisecond execution via a transparent, on-screen overlay.
+* **Contextual Tools:** Dynamic bubble menus that change based on your active TradingView tool.
 
 ## 🛠️ Setup
 1.  **Plugin:** Install `LogiHapticTape.lplugin` via Logi Options+.
