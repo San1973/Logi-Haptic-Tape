@@ -1,3 +1,5 @@
+// Logic
+
 const io = require('socket.io')(3000, {
   cors: { origin: "*" } // Allows the browser extension to connect
 });
