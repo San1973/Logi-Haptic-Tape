@@ -1,7 +1,5 @@
 # 📈 Logi Haptic-Tape: The Tactile Trading Terminal
 
-![Logi Haptic-Tape Dashboard](https://path-to-your-screenshot.png)
-
 > **"Feel the Breakout. Rule the Tape."**
 > A professional-grade, multisensory integration for the Logitech MX Creative Ecosystem, transforming abstract market data into physical intuition.
 
